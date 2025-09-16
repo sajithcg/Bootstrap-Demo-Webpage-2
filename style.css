@@ -6,13 +6,16 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 
 #navbar{
     position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 3rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     background-color: #141414;
 }
@@ -37,6 +40,7 @@
     background: blue;
     border-radius: 15px;
 }
+
 .section{
     width: 100%;
     min-height: 100vh;
@@ -51,7 +55,7 @@
     flex-direction: column;
 }
 #home h1{
-    font-size: 100px;
+    font-size: clamp(2.5rem, 8vw, 100px);
     color: white;
     letter-spacing: 3px;
     font-weight: bolder;
@@ -64,8 +68,11 @@
 }
 
 .section .input-group{
-    width: 40%;
+    width: 90%;
+    max-width: 400px;
     height: 45px;
+    justify-content: center;
+    margin: 0 auto;
 }
 .signin{
     background: blue !important;
@@ -86,6 +93,7 @@
 }
 #about p{
     color: white;
+    text-align: justify;
 }
 
 #products{
@@ -107,8 +115,6 @@
 }
 #products .card{
     background: white;
-    width: 350px;
-    height: 450px;
     border: none;
     box-shadow: 15px 15px 30px black,
                 inset 4px 4px 10px black;
@@ -116,7 +122,6 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    margin: 20px 50px;
 }
 #products .card:hover{
     box-shadow: inset 5px 5px 10px black,
@@ -146,7 +151,7 @@ form{
 }
 #contacts h1{
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
 #contacts h1:hover{
