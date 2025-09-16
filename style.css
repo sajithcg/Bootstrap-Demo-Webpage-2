@@ -125,8 +125,8 @@ body{
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    width: 20rem;
     height: 450px;
+    margin: 30px;
 }
 #products .card:hover{
     box-shadow: inset 5px 5px 10px black,
